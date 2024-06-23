@@ -1,0 +1,10 @@
+.nav-container >ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.nav-container >ul>li{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px;
+}
