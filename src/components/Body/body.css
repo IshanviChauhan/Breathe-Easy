@@ -1,0 +1,6 @@
+h1, h2, h3, h4, h5{
+    text-transform: uppercase;
+}
+.main{
+    border: 1px solid black;
+}
