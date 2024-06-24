@@ -1,5 +1,4 @@
 import "./header.css";
-// import {logo} from "../assets/BreateEasyLogo.png";
 
 const Header=() =>{
     return(
