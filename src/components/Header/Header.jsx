@@ -1,11 +1,13 @@
 import "./header.css";
+import logo from "../../assets/BreatheEasyLogo.png"
 
 const Header=() =>{
+    // console.log(logo);
     return(
         <>
         <div id="nav">
         <div className="logo-container">
-            <img className="logo" />
+            <img src={logo} className="logo" />
         </div>
         <h4>HOME</h4>
         <h4>ABOUT</h4>
