@@ -1,8 +1,42 @@
 import "./header.css";
 import logo from "../../assets/BreatheEasyLogo.png"
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Header=() =>{
-    // console.log(logo);
+    useEffect(() => {
+        gsap.to("#nav", {
+          backgroundColor: "#F6E6CB",
+          duration: 0.5,
+          height: "80px",
+          scrollTrigger: {
+            trigger: "#nav",
+            scroller: "body",
+            start: "top -10%",
+            end: "top -11%",
+            scrub: 1,
+          },
+        });
+    
+        gsap.to("#main", {
+          backgroundColor: "white",
+          scrollTrigger: {
+            trigger: "#main",
+            scroller: "body",
+            start: "top -25%",
+            end: "top -70%",
+            scrub: 2,
+          },
+        });
+    
+        // Clean up ScrollTrigger instances on component unmount
+        return () => {
+          ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+      }, []);
     return(
         <>
         <div id="nav">
