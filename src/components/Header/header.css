@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Rubik:wght@400;500;700&display=swap");
 
-
 *{
   margin: 0;
   padding: 0;
@@ -98,6 +97,7 @@ a.no-underline {
   font-size: 8.5vw;
   font-weight: 900;
   position: relative;
+  letter-spacing: 3.5px;
 }
 #page1 h3::before{
   content: "Breathe Easy";

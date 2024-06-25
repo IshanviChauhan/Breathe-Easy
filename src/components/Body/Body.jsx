@@ -17,11 +17,11 @@ const Body= () => {
                 </div>
                 <div className="features">
                     <h3>Suitable Tree Selection</h3>
-                    <p>Monitor real-time air quality data and pollutant concentrations to stay informed about your surroundings.</p>
+                    <p>Explore a variety of tree species tailored to your local climate and soil conditions to make informed decisions for tree planting initiatives.</p>
                 </div>
                 <div className="features">
                     <h3>Interactive Map</h3>
-                    <p>Monitor real-time air quality data and pollutant concentrations to stay informed about your surroundings.</p>
+                    <p>Navigate a 3D topographic map displaying color- coded AQI levels, allowing you to explore detailed air quality information for specific areas.</p>
                 </div>
             </div>
         </div>
