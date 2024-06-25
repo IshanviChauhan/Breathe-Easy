@@ -1,4 +1,4 @@
-
+import "./body.css";
 
 const Body= () => {
     return(
