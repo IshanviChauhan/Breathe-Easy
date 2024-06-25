@@ -1,6 +1,59 @@
-h1, h2, h3, h4, h5{
+h1, h4{
     text-transform: uppercase;
 }
+
 .main{
-    border: 1px solid black;
+    background-color: #379777;
+    text-align: center;
+    color: white;
+    padding: 50px 20px 50px 20px ;
+}
+.main h4{
+    margin: 10px;
+}
+.main h1{
+    margin: 20px;
+}
+.main p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main .features-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.main .features-box a{
+    text-align: left;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 4px;
+    width: 40%;
+    text-decoration: none;
+    color: white;
+    background-color: #40A578;
+    box-shadow: 3px 3px 5px #F4CE14, -2px -2px 5px #45474B;
+}
+.main .features-box a:hover{
+    background-color: #F4CE14;
+    box-shadow: none;
+    color: #45474B;
+}
+.main .features-box .feature h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.main .features-box .feature i{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.main .features-box .feature p{
+    font-size: 17px;
+    font-weight: 500;
 }
