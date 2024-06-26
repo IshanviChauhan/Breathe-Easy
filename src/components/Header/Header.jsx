@@ -10,7 +10,7 @@ const Header = () => {
   useEffect(() => {
     gsap.to("#nav", {
       backgroundColor: "#ceffef",
-      duration: 0.5,
+      duration: 0.2,
       height: "100px",
       scrollTrigger: {
         trigger: "#nav",
