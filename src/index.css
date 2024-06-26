@@ -17,6 +17,10 @@ html,body{
   width: 100%;
 }
 
+body{
+  background-color: #FFFDDA;
+}
+
 ::-webkit-scrollbar{
   width: 0;
 }
