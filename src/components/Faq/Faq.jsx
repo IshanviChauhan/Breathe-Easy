@@ -16,7 +16,7 @@ const FaqItem = ({ question, answer }) => {
         <span className={`close ${isActive ? 'active' : ''}`}>-</span>
       </div>
       <div className={`answer_content ${isActive ? 'active' : ''}`}>
-        <p>{answer}</p>
+      <p dangerouslySetInnerHTML={{ __html: answer }}></p>
       </div>
     </div>
   );
@@ -30,7 +30,7 @@ const Faq = () => {
     },
     {
       question: 'What can I do to improve Air Quality in my community?',
-      answer: 'Some of the things individuals can do to reduce their personal contribution to air pollution are: 1: Choose clean modes of transport when available (e.g. public transport, cycling or walking rather than private cars or motorbikes). 2: If you\'re considering buying a car, look at its fuel economy, nitrogen dioxide emissions, and check the real-world emissions. Buying a hybrid or electric vehicle or smaller engine capacity vehicles will also help to cut down your contributions to emissions. 3: If you have a car, ensure it is serviced regularly to minimize its contribution to air pollution. 4: Use clean fuels and technologies for cooking, lighting and heating. 5: Use renewable energy sources wherever possible. 6: Stop burning household and agricultural waste.'
+      answer: 'Some of the things individuals can do to reduce their personal contribution to air pollution are: <br>1: Choose clean modes of transport when available (e.g. public transport, cycling or walking rather than private cars or motorbikes). <br>2: If you\'re considering buying a car, look at its fuel economy, nitrogen dioxide emissions, and check the real-world emissions. Buying a hybrid or electric vehicle or smaller engine capacity vehicles will also help to cut down your contributions to emissions. <br>3: If you have a car, ensure it is serviced regularly to minimize its contribution to air pollution. <br>4: Use clean fuels and technologies for cooking, lighting and heating. <br>5: Use renewable energy sources wherever possible. <br>6: Stop burning household and agricultural waste.'
     },
     {
       question: 'What is the role of Air Quality monitoring in Air Quality management?',
