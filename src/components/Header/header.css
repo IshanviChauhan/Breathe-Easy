@@ -87,6 +87,10 @@ a.no-underline {
   flex-direction: column;
   text-align: center;
   z-index: 10;
+  background-image: url(/src/assets/treeBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #page1 h3 {
   font-size: 8.5vw;
