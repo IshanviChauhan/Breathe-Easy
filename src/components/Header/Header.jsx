@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Header = () => {
   useEffect(() => {
     gsap.to("#nav", {
-      backgroundColor: "#ceffef",
+      backgroundColor: "#D8EFD3",
       duration: 0.2,
       height: "100px",
       scrollTrigger: {

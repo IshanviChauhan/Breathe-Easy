@@ -64,7 +64,7 @@ body {
   transform-origin: left;
   transition: all 0.8s;
 }
-
+  
 .btn-yellow:hover::before {
   transform: scaleX(1);
 }
@@ -93,15 +93,17 @@ a.no-underline {
   font-weight: 900;
   position: relative;
   letter-spacing: 3.5px;
+  color: #00755E;
 }
 #page1 h3::before {
   content: "Breathe Easy";
   position: absolute;
-  color: black;
-  top: -1px;
-  left: -4px;
-  -webkit-text-stroke: 2.5px #5ed225;
+  color: rgb(0, 0, 0);
+  top: 3.5px;
+  left: -3.5px;
+  -webkit-text-stroke: 2.5px #98FB98;
   z-index: -1;
+  filter: drop-shadow(0 0 4px #50C878);
 }
 #page1 h3 {
   font-size: 80px;
