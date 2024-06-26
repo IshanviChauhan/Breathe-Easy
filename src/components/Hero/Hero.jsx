@@ -1,13 +1,10 @@
-import "./hero.css"
+import './hero.css';
 
-const Hero= () => {
-    return(
-        <div>
-           
-        </div>
+const Hero=() => {
+    return (
+        <>
+        </>
     )
 }
-
-
 
 export default Hero;
