@@ -79,7 +79,6 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div id="page2"></div>
       </div>
     </>
 

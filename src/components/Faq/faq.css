@@ -2,6 +2,7 @@
     font-family: 'Arial', sans-serif;
     max-width: 700px;
     margin: 50px auto;
+    margin-top: 100px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -10,7 +11,7 @@
 .faqs_container h2 {
     padding: 20px;
     font-size: 28px;
-    background-color: #4CAF50;
+    background-color: #00755E;
     color: white;
     text-align: center;
     border-bottom: 2px solid #ddd;
@@ -24,7 +25,6 @@
 
 .faqs_container .faq_header {
     display: flex;
-    background-color: #ff5722;
     color: white;
     align-items: center;
     padding: 15px 32px;
@@ -32,10 +32,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-bottom: 1px solid #ddd;
-}
-
-.faqs_container .faq_header:hover {
-    background-color: #e64a19;
 }
 
 .faqs_container .faq_header .open,
@@ -87,13 +83,14 @@
 
 /* Additional styles for better visuals */
 .faqs_container .faq_header {
-    background-color: #007BFF; /* Change the background color to a different shade */
+    background-color: #F4CE14; /* Change the background color to a different shade */
     border-radius: 10px;
     margin: 10px 0;
+    color: black;
 }
 
 .faqs_container .faq_header:hover {
-    background-color: #0056b3; /* Slightly darker on hover */
+    background-color: #84f198; /* Slightly darker on hover */
 }
 
 .faqs_container .faq_header h3 {
