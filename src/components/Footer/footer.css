@@ -61,7 +61,6 @@ address {
   display: grid;
   gap: 30px;
 }
-
 .footer-brand .Logo-image{
   filter: drop-shadow(0 0 20px rgba(170, 255, 177, 0.413));
 }
@@ -109,18 +108,14 @@ address {
   margin-bottom: 15px;
 }
 
-.address {
-  margin-top: -5%;
-  margin-right: 10%;
+.footer .tree img{
+  margin-top: -10%;
+  margin-left: 5%;
+  width: auto;
+  height: 250px;
 }
 
-.address-link {
-  color: rgb(90, 255, 90);
-  margin-block-start: 10px;
-  transition: 0.25 ease;
-}
-
-.address-link:is(:hover, :focus) {
+.tree:is(:hover, :focus) {
   opacity: 0.8;
 }
 

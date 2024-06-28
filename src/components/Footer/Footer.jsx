@@ -89,21 +89,9 @@ const Footer = () => {
               </li>
             </ul>
 
-            <address className="address">
-              <div className="map">
-                <iframe
-                  title="abes"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8889002703554!2d77.4437602149526!3d28.633091682417557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee3d2df45167%3A0xe0ac343085e12a8f!2sABES%20ENGINEERING%20COLLEGE%2C%20NH%2024%2C%20Chipiyana%20Buzurg%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201009!5e0!3m2!1sen!2sin!4v1666931394472!5m2!1sen!2sin"
-                  width="80%"
-                  height="200px"
-                  // style="border: 0"
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded"
-                ></iframe>
-              </div>
-            </address>
+            <div className="tree">
+              <img src="src\assets\tree.png" alt="" />
+            </div>
           </div>
         </div>
 
