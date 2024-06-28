@@ -32,21 +32,21 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#events_carousel" className="footer-link">
+                <a href="#" className="footer-link">
                   <i className="bx bx-chevron-right"></i>
 
                   <span className="span">Home</span>
                 </a>
               </li>
               <li>
-                <a href="#past_carousel" className="footer-link">
+                <a href="#" className="footer-link">
                   <i className="bx bx-chevron-right"></i>
 
                   <span className="span">AQI Table</span>
                 </a>
               </li>
               <li>
-                <a href="#faq_carousel" className="footer-link">
+                <a href="#" className="footer-link">
                   <i className="bx bx-chevron-right"></i>
                   <span className="span">FAQ</span>
                 </a>
