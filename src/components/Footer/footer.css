@@ -63,7 +63,7 @@ address {
 }
 
 .footer-brand .Logo-image{
-  filter: drop-shadow(0 0 20px rgba(170, 255, 177, 0.285));
+  filter: drop-shadow(0 0 20px rgba(170, 255, 177, 0.413));
 }
 .footer-brand .Logo-image:hover{
   filter: drop-shadow(0 0 50px rgba(170, 255, 177, 0.413));
@@ -84,7 +84,7 @@ address {
   transition: 0.25 ease;
   overflow: hidden;
 }
-.footer-link:hover {
+.footer-link i:hover {
     color: #40A578;
   }
 .footer-link:is(:hover, :focus) {
