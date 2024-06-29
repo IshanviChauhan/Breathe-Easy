@@ -1,0 +1,167 @@
+.BreatheSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.BreatheSearch input {
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.BreatheSearch input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.BreatheSearch button {
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.BreatheSearch button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.BreatheSearch h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.BreatheSearch h2:hover {
+    color: #007BFF;
+}
+
+.BreatheSearch p {
+    font-size: 20px;
+    color: #555;
+    animation: fadeIn 1.5s ease-in-out, bounce 2s infinite;
+    transition: color 0.3s, transform 0.3s;
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid #007BFF;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.BreatheSearch p:hover {
+    color: #fff;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.BreatheSearch p.error {
+    color: red;
+    background: none;
+    border: none;
+    box-shadow: none;
+    animation: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #333;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    background-color: #007BFF;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+ul li img {
+    margin-left: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+ul li img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ul li .load-image-button {
+    margin-left: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li .load-image-button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
