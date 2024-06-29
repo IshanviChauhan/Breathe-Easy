@@ -1,8 +1,9 @@
-import "./header.css";
-import logo from "../../assets/BreatheEasyLogo.png";
-import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../assets/BreatheEasyLogo.png";
+import "./header.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,8 +44,8 @@ const Header = () => {
         <div className="logo-container">
           <img src={logo} className="logo" />
         </div>
-        <h4>HOME</h4>
-        <h4>ABOUT</h4>
+        <h4><Link to="/">HOME</Link></h4>
+        <h4><Link to="/about">ABOUT</Link></h4>
         <h4>FEATURES</h4>
         <h4>CONTACT US</h4>
         <h3>LOGIN</h3>
