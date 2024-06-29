@@ -8,7 +8,7 @@ const Body= () => {
                 <h1>Discover Key Features</h1>
                 <p>Explore the functionalities that make Breathe Easy your go-to app for air quality monitoring and tree planting initiatives.</p>
                 <div className="features-box">
-                    <a href="#">
+                    <a href="#BreatheSearch">
                         <div className="feature">
                             <h3><i className='bx bx-cross'></i>Track Air Quality</h3>
                             <p>Monitor real-time air quality data and pollutant concentrations to stay informed about your surroundings.</p>
@@ -20,13 +20,13 @@ const Body= () => {
                             <p>Visualize the positive impact of planting trees on improving air quality and track the number of trees needed to reach target AQI levels.</p>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#BreatheSearch">
                         <div className="feature">
                             <h3><i className='bx bxs-tree'></i>Suitable Tree Selection</h3>
                             <p>Explore a variety of tree species tailored to your local climate and soil conditions to make informed decisions for tree planting initiatives.</p>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="https://www.msn.com/en-in/weather/forecast/in-Sadar,Uttar-Pradesh?loc=eyJsIjoiU2FkYXIiLCJyIjoiVXR0YXIgUHJhZGVzaCIsImMiOiJJbmRpYSIsImkiOiJJTiIsImciOiJlbi1pbiIsIngiOjc3LjQ4ODYwOTMxMzk2NDg0LCJ5IjoyOC40NjgxODkyMzk1MDE5NTN9&weadegreetype=C&ocid=winp2fptaskbar&cvid=a8ea3cc839ee432b82abb649d352e582&content=Nowcast_wxncrn&ei=6" target="blank">
                         <div className="feature">
                             <h3><i className='bx bxs-map'></i>Interactive Map</h3>
                             <p>Navigate a 3D topographic map displaying color- coded AQI levels, allowing you to explore detailed air quality information for specific areas.</p>

@@ -10,7 +10,7 @@ const Header = () => {
   useEffect(() => {
     gsap.to("#nav", {
       backgroundColor: "#D8EFD3",
-      duration: 0.2,
+      duration: 0.1,
       height: "100px",
       scrollTrigger: {
         trigger: "#nav",
@@ -48,11 +48,7 @@ const Header = () => {
         <h4>FEATURES</h4>
         <h4>CONTACT US</h4>
         <h3>LOGIN</h3>
-        <a
-          href="https://www.linkedin.com/in/zakir-uddin/"
-          target="_blank"
-          className="no-underline"
-        >
+        <a href="#">
           <div className="btn-yellow" id="btn">
             Register Here
           </div>
@@ -64,16 +60,12 @@ const Header = () => {
         <p>Track, Plant and Learn for Cleaner Air</p>
 
         <div id="get">
-          <a
-            href="https://www.linkedin.com/in/zakir-uddin/"
-            target="_blank"
-            className="no-underline"
-          >
+          <a href="#BreatheSearch">
             <div className="btn-yellow" id="btn">
               Get Started
             </div>
           </a>
-          <a href="#learn-more">
+          <a href="#aqi">
             <p>Learn More →</p>
           </a>
         </div>

@@ -15,21 +15,10 @@ a {
   color: inherit;
 }
 
-a,
-img,
-span,
-label,
-input,
-select,
-button,
-ion-icon {
+/* .footer a, img, span, label, input, select, button, i{
   display: block;
   /* pointer-events: none; */
-}
 
-address {
-  font-style: normal;
-}
 
 .footer {
   background-color: #45474B;
@@ -42,8 +31,7 @@ address {
 
 .footer i {
   color: rgb(106, 255, 151);
-  font-size: 22px;
-  --ionicon-stroke-width: 40px;
+  font-size: 30px;
 }
 
 .footer-text {
@@ -115,29 +103,23 @@ address {
   height: 250px;
 }
 
-.tree:is(:hover, :focus) {
+.footer .tree:is(:hover, :focus) {
   opacity: 0.8;
 }
 
-.social-list {
+.footer .social-list {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 2px;
 }
-.socialIcon {
-  color: white;
-  font-size: 30px;
-}
-.socialIcon:hover {
+
+.footer .socialIcon:hover {
     color: #F4CE14;
     transform: rotate(15deg);
   }
 
-.map {
-  margin-top: 25px;
-}
-.rounded {
+.footer .rounded {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

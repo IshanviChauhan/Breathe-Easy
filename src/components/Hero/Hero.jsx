@@ -93,9 +93,9 @@ const Hero = () => {
             const trees = treesData[pollutant].trees;
             const treesToShow = showAllTrees ? trees : trees.slice(0, 2);
             return (
-                <div>
+                <div className="pollutantContent">
                     <h2>The Major Pollutant is {pollutantNames[pollutant]}</h2>
-                    <h3>For Removal of {pollutantNames[pollutant]}, Plant these</h3>
+                    <h3>For Removal of {pollutantNames[pollutant]}, Trees needed to be planted are: </h3>
                     <ul>
                         {treesToShow.map((tree, index) => (
                             <li key={index}>
@@ -126,19 +126,13 @@ const Hero = () => {
     }
 
     return (
-        <div className="BreatheSearch">
-            <input
-                type="text"
-                placeholder="Search your city"
-                value={city}
-                onChange={(e) => setCity(e.target.value)}
-            />
+        <div className="BreatheSearch" id="BreatheSearch">
+            <input type="text" placeholder="Search your city" value={city} onChange={(e) => setCity(e.target.value)}/>
             <button onClick={handleSearch}>Search</button>
             {error && <p style={{ color: "red" }}>{error}</p>}
             {aqiData && (
                 <>
-                    <h2>The AQI of {city} is {aqiData.data.aqi}</h2>
-                    <h2 className="">The trees needed to be planted are:</h2>
+                    <h2>The AQI of {city} is <span>{aqiData.data.aqi}</span></h2>
                     {aqiData.data.iaqi.co && renderTrees("co", aqiData.data.iaqi.co.v)}
                     {aqiData.data.iaqi.no2 && renderTrees("no2", aqiData.data.iaqi.no2.v)}
                     {aqiData.data.iaqi.o3 && renderTrees("o3", aqiData.data.iaqi.o3.v)}

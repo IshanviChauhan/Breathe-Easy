@@ -20,7 +20,7 @@ const Content = () => {
           <button>Learn More</button>
         </a>
       </div>
-      <div className="aqi">
+      <div className="aqi" id="aqi">
         <h1>About Air Quality Levels</h1>
         <table>
             <tr>

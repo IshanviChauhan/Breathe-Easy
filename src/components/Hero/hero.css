@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin-top: -100px;
+    background-color: #FFFDDA;
+    /* background: linear-gradient(to right, #74ebd5, #acb6e5); */
     padding: 30px;
+    padding-top: 150px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); */
     transition: background 0.3s;
 }
 
@@ -14,24 +16,21 @@
     width: 300px;
     padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: none;
+    border-radius: 7px;
     font-size: 18px;
     transition: border-color 0.3s, box-shadow 0.3s;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.BreatheSearch input:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
-}
-
 .BreatheSearch button {
     padding: 15px 25px;
     font-size: 18px;
-    color: #fff;
-    background-color: #007BFF;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: #f4ce14;
+    width: fit-content;
+    color: black;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -40,23 +39,21 @@
 }
 
 .BreatheSearch button:hover {
-    background-color: #0056b3;
+    background-color: #D8EFD3;
     transform: scale(1.1);
 }
 
 .BreatheSearch h2 {
     margin-top: 20px;
-    font-size: 26px;
+    font-size: 22px;
     color: #333;
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
-    border-bottom: 3px solid #007BFF;
     padding-bottom: 10px;
     transition: color 0.3s;
 }
-
-.BreatheSearch h2:hover {
-    color: #007BFF;
+.BreatheSearch h2 span{
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 .BreatheSearch p {
@@ -78,26 +75,37 @@
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-.BreatheSearch p.error {
-    color: red;
-    background: none;
-    border: none;
-    box-shadow: none;
-    animation: none;
+.pollutantContent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pollutantContent h2{
+    text-transform: capitalize;
+}
+.pollutantContent h3{
+    text-transform: capitalize;
+    margin-top: 10px;
 }
 
-ul {
+.BreatheSearch p.error {
+    color: white;
+    background-color: rgb(255, 18, 18);
+}
+
+.BreatheSearch ul {
     list-style: none;
     padding: 0;
     animation: fadeIn 1s ease-in-out;
 }
 
-ul li {
+.BreatheSearch ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     color: #333;
     background: #f9f9f9;
     margin: 10px 0;
@@ -107,26 +115,20 @@ ul li {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-ul li:hover {
-    background-color: #007BFF;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-ul li img {
-    margin-left: 15px;
+.BreatheSearch ul li img {
+    margin-left: 100px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-ul li img:hover {
+.BreatheSearch ul li img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-ul li .load-image-button {
-    margin-left: 20px;
+.BreatheSearch ul li .load-image-button {
+    margin-left: 100px;
     padding: 10px 15px;
     font-size: 16px;
     color: #fff;
@@ -136,9 +138,10 @@ ul li .load-image-button {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: -2px;
 }
 
-ul li .load-image-button:hover {
+.BreatheSearch ul li .load-image-button:hover {
     background-color: #218838;
     transform: scale(1.1);
 }
