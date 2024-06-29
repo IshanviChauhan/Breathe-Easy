@@ -40,6 +40,12 @@ address {
   /* width: 100vh; */
 }
 
+.footer i {
+  color: rgb(106, 255, 151);
+  font-size: 22px;
+  --ionicon-stroke-width: 40px;
+}
+
 .footer-text {
   line-height: 1.6;
   font-size: 15px;
@@ -55,9 +61,16 @@ address {
   display: grid;
   gap: 30px;
 }
+.footer-brand .Logo-image{
+  filter: drop-shadow(0 0 20px rgba(170, 255, 177, 0.413));
+}
+.footer-brand .Logo-image:hover{
+  filter: drop-shadow(0 0 50px rgba(170, 255, 177, 0.413));
+}
+
 
 .footer-list-title {
-  color: rgb(36, 227, 36);
+  color: rgb(106, 255, 151);
   font-weight: 600;
   letter-spacing: 1px;
   margin-block-end: 25px;
@@ -70,7 +83,7 @@ address {
   transition: 0.25 ease;
   overflow: hidden;
 }
-.footer-link:hover {
+.footer-link i:hover {
     color: #40A578;
   }
 .footer-link:is(:hover, :focus) {
@@ -95,24 +108,14 @@ address {
   margin-bottom: 15px;
 }
 
-.footer-item ion-icon {
-  color: rgb(36, 227, 36);
-  font-size: 22px;
-  --ionicon-stroke-width: 40px;
+.footer .tree img{
+  margin-top: -10%;
+  margin-left: 5%;
+  width: auto;
+  height: 250px;
 }
 
-.address {
-  margin-top: -5%;
-  margin-right: 10%;
-}
-
-.address-link {
-  color: rgb(37, 218, 37);
-  margin-block-start: 10px;
-  transition: 0.25 ease;
-}
-
-.address-link:is(:hover, :focus) {
+.tree:is(:hover, :focus) {
   opacity: 0.8;
 }
 
